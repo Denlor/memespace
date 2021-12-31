@@ -25,10 +25,8 @@ export default function Register() {
                 navigate("/login")
             } catch (err) {
                 console.log(err)
-            }
-            
+            }            
         }
-
     }
     
     return (
@@ -47,7 +45,9 @@ export default function Register() {
                         <input placeholder="Password" required ref={password} className="registerInput" type="password" minLength="6"/>
                         <input placeholder="Password Again" required ref={passwordAgain} className="registerInput" type="password" minLength="6"/>
                         <button className="registerButton" type="submit">Sign Up</button>
-                        <button className="registerRegisterButton">Log into account</button>
+                        <Link to="/login" className="registerRegisterButton">
+                            <button className="registerRegisterButton">Log into account</button>
+                        </Link>
                     </form>
                 </div>
             </div>
