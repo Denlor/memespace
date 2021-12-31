@@ -41,8 +41,7 @@ export default function Rightbar({ user }) {
         dispatch({ type: "FOLLOW", payload: user._id });
       }
       setFollowed(!followed);
-    } catch (err) {
-    }
+    } catch (err) {}
   };
 
   const HomeRightbar = () => {
@@ -66,9 +65,7 @@ export default function Rightbar({ user }) {
   };
 
   const ProfileRightbar = () => {
-    setFollowed(
-      currentUser.followings.includes(user?._id)
-    );
+    setFollowed(currentUser.followings.includes(user?._id));
     return (
       <>
         {user.username !== currentUser.username && (

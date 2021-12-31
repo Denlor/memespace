@@ -25,10 +25,8 @@ export default function Register() {
                 navigate("/login")
             } catch (err) {
                 console.log(err)
-            }
-            
+            }            
         }
-
     }
     
     return (
@@ -49,7 +47,7 @@ export default function Register() {
                         <button className="registerButton" type="submit">Sign Up</button>
                         <Link to="/login" className="registerRegisterButton">
                             <button className="registerRegisterButton">Log into account</button>
-                        </Link>                        
+                        </Link>
                     </form>
                 </div>
             </div>

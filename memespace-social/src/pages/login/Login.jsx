@@ -3,7 +3,7 @@ import "./login.css";
 import { loginCall } from "../../apiCalls";
 import { AuthContext } from "../../context/AuthContext";
 import { CircularProgress } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
 
 export default function Login() {
   const email = useRef();
